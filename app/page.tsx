@@ -549,7 +549,7 @@ export default function SampaVerticalLanding() {
           <img 
             src="/stickers/star.png" 
             alt="" 
-            className="w-[400px] animate-spin-slow absolute left-0 top-1/2 transform -translate-y-1/2 opacity-50"
+            className="w-[150px] md:w-[400px] animate-spin-slow absolute left-0 top-1/2 transform -translate-y-1/2 opacity-50"
           />
           <div className="relative z-10 text-right">
             <p className="text-sm md:text-base text-white/70 max-w-xs ml-auto mb-7">
