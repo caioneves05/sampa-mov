@@ -44,8 +44,8 @@ export default function SampaVerticalLanding() {
     },
     {
       id: 5,
-      thumbnail: "/videos/CAPA_05.jpg",
-      videoUrl: "/videos/VIDEO_05.mp4",
+     thumbnail: "/placeholder.svg?height=600&width=338",
+      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
       title: "Campanha Natura",
       brand: "Natura",
     },
@@ -544,20 +544,30 @@ export default function SampaVerticalLanding() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 px-4">
-        <div className="container mx-auto text-center animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-white">
-            Pronto para Criar Algo Incrível?
-          </h2>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-6 md:mb-8 px-4">
-            Vamos conversar sobre como podemos ajudar sua marca a se destacar com conteúdo de qualidade
-          </p>
-          <Button
-            size="lg"
-            className="bg-white text-[#D32D54] hover:bg-gray-100 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
-          >
-            Iniciar Projeto
-          </Button>
+      <section className="py-12 md:py-56 px-4">
+        <div className="container mx-auto text-center items-center animate-on-scroll relative">
+          <img 
+            src="/stickers/star.png" 
+            alt="" 
+            className="w-[400px] animate-spin-slow absolute left-0 top-1/2 transform -translate-y-1/2 opacity-50"
+          />
+          <div className="relative z-10 text-right">
+            <p className="text-sm md:text-base text-white/70 max-w-xs ml-auto mb-7">
+              <span className="font-bold text-[#D32D54]">Destaque-se!</span> Sua marca merece brilhar.
+            </p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-10 text-white">
+              Vamos Criar Algo <span className="text-[#D32D54]">Extraordinário</span> Juntos!
+            </h2>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl ml-auto mb-6 md:mb-8 px-4">
+              Transforme suas ideias em experiências visuais impactantes que conectam e engajam seu público.
+            </p>
+            <Button
+              size="lg"
+              className="bg-[#d32d5429] text-[#D32D54] hover:text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
+            >
+              Vamos Conversar
+            </Button>
+          </div>
         </div>
       </section>
 
