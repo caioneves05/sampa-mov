@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { Play, Pause, Mail, Instagram, Twitter, ChevronDown, Award, Users, Zap, Eye, ArrowRight, Linkedin } from "lucide-react"
+import { Play, Pause, Mail, Instagram, Twitter, ChevronDown, Award, Users, Zap, Eye, ArrowRight, Linkedin, Radio, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -16,59 +16,45 @@ export default function SampaVerticalLanding() {
   const verticalVideos = [
     {
       id: 1,
-      thumbnail: "/videos/CAPA_04.jpg",
+      thumbnail: "/verticais/CAPA_01.jpg",
       videoUrl: "/videos/VIDEO_04.mp4",
       title: "Campanha AVON",
       brand: "AVON",
     },
     {
       id: 2,
-      thumbnail: "/placeholder.svg?height=600&width=338",
+      thumbnail: "/verticais/CAPA_02.jpg",
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
       title: "Lifestyle Content",
       brand: "",
     },
     {
       id: 3,
-      thumbnail: "/placeholder.svg?height=600&width=338",
+      thumbnail: "/verticais/CAPA_03.jpg",
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
       title: "Fashion Campaign",
       brand: "",
     },
     {
       id: 4,
-      thumbnail: "/placeholder.svg?height=600&width=338",
+      thumbnail: "/verticais/CAPA_04.jpg",
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
       title: "Beauty Products",
       brand: "AVON",
     },
     {
       id: 5,
-     thumbnail: "/placeholder.svg?height=600&width=338",
+      thumbnail: "/verticais/CAPA_05.jpg",
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
       title: "Campanha Natura",
       brand: "Natura",
     },
     {
       id: 6,
-      thumbnail: "/placeholder.svg?height=600&width=338",
+      thumbnail: "/verticais/CAPA_06.jpg",
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
       title: "Creative Showcase",
       brand: "",
-    },
-    {
-      id: 7,
-      thumbnail: "/placeholder.svg?height=600&width=338",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-      title: "Artistic Campaign",
-      brand: "",
-    },
-    {
-      id: 8,
-      thumbnail: "/placeholder.svg?height=600&width=338",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-      title: "Nature Content",
-      brand: "Natura",
     },
   ]
 
@@ -76,37 +62,53 @@ export default function SampaVerticalLanding() {
   const horizontalVideos = [
     {
       id: 1,
-      thumbnail: "/placeholder.svg?height=400&width=700",
+      thumbnail: "/horizontais/CAPA_01.jpg",
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-      title: "Case Study: Campanha 360°",
-      description: "Estratégia completa de conteúdo vertical para AVON",
+      title: "Desafio X2 Podpah",
+      description: "Aftermovie dos melhores momentos do evento de futebol do maior podcast do Brasil.",
       metrics: "2.5M visualizações",
     },
     {
       id: 2,
-      thumbnail: "/placeholder.svg?height=400&width=700",
+      thumbnail: "/horizontais/CAPA_02.jpg",
       videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-      title: "Behind the Scenes",
-      description: "Processo criativo da nossa equipe",
+      title: "ACM Run 2025",
+      description: "Aftermovie da 1° Meia Maratona de Guarulhos.",
       metrics: "Making of exclusivo",
+    },
+    {
+      id: 3,
+      thumbnail: "/horizontais/CAPA_03.jpg",
+      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      title: "Pesca Trade Show",
+      description: "Cobertura audiovisual completa da maior feira de pesca do Brasil.",
+      metrics: "1.8M visualizações",
+    },
+    {
+      id: 4,
+      thumbnail: "/horizontais/CAPA_04.jpg",
+      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      title: "Detons - Trace Brasil",
+      description: "Evento Trace Brasil, que é um canal de TV voltado à cultura Afro Urbana.",
+      metrics: "500K visualizações",
     },
   ]
 
   const services = [
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Conteúdo Vertical",
-      description: "Criação de vídeos otimizados para redes sociais e mobile",
+      icon: <Radio className="w-8 h-8" />,
+      title: "Entrega Real Time",
+      description: "Conteúdo entregue em tempo real no seu evento",
     },
     {
       icon: <Eye className="w-8 h-8" />,
-      title: "Estratégia Visual",
-      description: "Desenvolvimento de identidade visual para campanhas digitais",
+      title: "Conteúdo Estratégico",
+      description: "Vídeos que vendem, posicionam e contam sua história com verdade.",
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Produção Completa",
-      description: "Da concepção à entrega, cuidamos de todo o processo criativo",
+      description: "Desde pré-produção, produção e pós-produção. Tudo alinhado com o briefing perfeito.",
     },
   ]
 
@@ -287,8 +289,8 @@ export default function SampaVerticalLanding() {
       <section className="relative py-12 md:py-20 px-4">
         <div className="container mx-auto text-center animate-on-scroll">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 hero-gradient leading-tight">
-            Transformamos Ideias<br />
-            <span className="text-[#D32D54]">Em Conexões</span>
+            Comunicar, atrair e converter.<br />
+            <span className="text-[#D32D54]">Este é o nosso propósito.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-6 md:mb-8 px-4">
             Criamos experiências visuais impactantes que conectam marcas ao seu público através de storytelling
@@ -313,7 +315,7 @@ export default function SampaVerticalLanding() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 md:py-16 px-4 border-y border-gray-800">
+      {/* <section className="py-12 md:py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
             <div className="animate-on-scroll">
@@ -334,12 +336,12 @@ export default function SampaVerticalLanding() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
     
 
       {/* Horizontal Videos - Case Studies */}
-      <section className="py-12 md:py-20 px-4" id="trabalhos">
+      <section className="py-12 md:py-10 px-4" id="trabalhos">
         <div className="container mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Cases de Sucesso</h2>
@@ -400,13 +402,13 @@ export default function SampaVerticalLanding() {
       <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Nossos Trabalhos</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Criativos Verticais</h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">
-              Conteúdo criado para impactar e engajar seu público
+              Criação inteligente, no formato que vende.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 md:gap-6 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6 mb-12">
             {verticalVideos.map((video, index) => (
               <div
                 key={video.id}
@@ -467,7 +469,7 @@ export default function SampaVerticalLanding() {
           <div className="text-center mb-12 md:mb-16 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Nossos Serviços</h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">
-              Soluções completas para sua estratégia de conteúdo digital
+              Soluções completas para sua estratégia de conteúdo
             </p>
           </div>
 
@@ -543,77 +545,71 @@ export default function SampaVerticalLanding() {
         </div>
       </section> */}
 
-      {/* CTA Section */}
-      <section className="py-12 md:py-56 px-4">
-        <div className="container mx-auto text-center items-center animate-on-scroll relative">
+
+        <div className="w-full mx-auto flex items-center justify-between animate-on-scroll relative">
           <img 
-            src="/stickers/star.png" 
-            alt="" 
-            className="w-[150px] md:w-[400px] animate-spin-slow absolute left-0 top-1/2 transform -translate-y-1/2 opacity-50"
+            src="/logos/lead.png" 
+            alt="Logo" 
+            className="h-auto w-[40%] md:w-[370px] lg:w-[600px]"
           />
-          <div className="relative z-10 text-right">
-            <p className="text-sm md:text-base text-white/70 max-w-xs ml-auto mb-7">
-              <span className="font-bold text-[#D32D54]">Destaque-se!</span> Sua marca merece brilhar.
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-10 text-white">
-              Vamos Criar Algo <span className="text-[#D32D54]">Extraordinário</span> Juntos!
-            </h2>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl ml-auto mb-6 md:mb-8 px-4">
-              Transforme suas ideias em experiências visuais impactantes que conectam e engajam seu público.
-            </p>
-            <Button
-              size="lg"
-              className="bg-[#d32d5429] text-[#D32D54] hover:text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
-            >
-              Vamos Conversar
-            </Button>
-          </div>
+          {/* <div className="mr-44">
+          <Button
+            size="lg"
+            className="bg-[#d32d5429] text-[#D32D54] hover:text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
+          >
+            Vamos Conversar
+          </Button>
+          </div> */}
         </div>
-      </section>
+      
 
       {/* Footer */}
-      <footer id="contato" className="bg-[#d32d5412] border-[#D32D54">
+      <footer id="contato" className="bg-[#d32d5412] border-[#D32D54]">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 items-center md:grid-cols-3 gap-8 mb-8 text-center">
             <div className="animate-on-scroll">
-              <img src="/sampa-logo.png" alt="Sampa Mov" className="h-8 w-auto mb-4" />
-              <p className="text-gray-400">Criando conteúdo inovador e envolvente para o mundo digital.</p>
-            </div>
-
-            <div className="animate-on-scroll">
-              <h3 className="text-lg font-semibold mb-4 text-[#D32D54]">Serviços</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>Conteúdo Vertical</li>
-                <li>Estratégia Visual</li>
-                <li>Produção Completa</li>
-                <li>Consultoria Digital</li>
-              </ul>
+              <img src="/sampa-logo.png" alt="Sampa Mov" className="h-8 w-auto mb-4 mx-auto" />
+              {/* <p className="text-gray-400">Criando conteúdo inovador e envolvente para o mundo digital.</p> */}
             </div>
 
             <div className="animate-on-scroll">
               <h3 className="text-lg font-semibold mb-4 text-[#D32D54]">Contato</h3>
               <div className="space-y-2">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center space-x-2">
                   <Mail className="w-4 h-4 text-[#D32D54]" />
-                  <span className="text-gray-400">contato@sampamov.com</span>
+                  <span className="text-gray-400">producao@sampamov.com</span>
+                </div>
+                <div className="flex items-center justify-center space-x-2">
+                  <Phone className="w-4 h-4 text-[#D32D54]" />
+                  <span className="text-gray-400">(11) 91429-3961</span>
                 </div>
               </div>
             </div>
 
             <div className="animate-on-scroll">
               <h3 className="text-lg font-semibold mb-4 text-[#D32D54]">Redes Sociais</h3>
-              <div className="flex space-x-4">
+              <div className="flex justify-center space-x-4">
                 <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
+                  href="https://www.linkedin.com/company/sampa-mov-produtora-audiovisual/"
+                  className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
+                  href="http://instagram.com/sampa.mov"
+                  className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <Linkedin className="w-5 h-5" />
+                </a>
+
+                <a
+                  href="https://www.behance.net/sampamovprodutora/appreciated"
+                  className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <img src="/logos/Behance-Logo.png" alt="Behance Logo" className="w-20" />
                 </a>
               </div>
             </div>
