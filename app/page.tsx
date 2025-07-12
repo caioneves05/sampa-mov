@@ -18,42 +18,42 @@ export default function SampaVerticalLanding() {
     {
       id: 1,
       thumbnail: "/verticais/CAPA_01.jpg",
-      videoUrl: "/videos/VIDEO_04.mp4",
+      videoUrl: "/videos/verticais/VIDEO_01.mp4",
       title: "Campanha AVON",
       brand: "AVON",
     },
     {
       id: 2,
       thumbnail: "/verticais/CAPA_02.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      videoUrl: "/videos/verticais/VIDEO_02.mp4",
       title: "Lifestyle Content",
       brand: "",
     },
     {
       id: 3,
       thumbnail: "/verticais/CAPA_03.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      videoUrl: "/videos/verticais/VIDEO_03.mp4",
       title: "Fashion Campaign",
       brand: "",
     },
     {
       id: 4,
       thumbnail: "/verticais/CAPA_04.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      videoUrl: "/videos/verticais/VIDEO_04.mp4",
       title: "Beauty Products",
       brand: "AVON",
     },
     {
       id: 5,
       thumbnail: "/verticais/CAPA_05.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      videoUrl: "/videos/verticais/VIDEO_05.mp4",
       title: "Campanha Natura",
       brand: "Natura",
     },
     {
       id: 6,
       thumbnail: "/verticais/CAPA_06.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      videoUrl: "/videos/verticais/VIDEO_06.mp4",
       title: "Creative Showcase",
       brand: "",
     },
@@ -64,7 +64,7 @@ export default function SampaVerticalLanding() {
     {
       id: 1,
       thumbnail: "/horizontais/CAPA_01.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      videoUrl: "/videos/horizontais/VIDEO_01.mp4",
       title: "Desafio X2 Podpah",
       description: "Aftermovie dos melhores momentos do evento de futebol do maior podcast do Brasil.",
       metrics: "2.5M visualizações",
@@ -72,7 +72,7 @@ export default function SampaVerticalLanding() {
     {
       id: 2,
       thumbnail: "/horizontais/CAPA_02.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      videoUrl: "/videos/horizontais/VIDEO_02.mp4",
       title: "ACM Run 2025",
       description: "Aftermovie da 1° Meia Maratona de Guarulhos.",
       metrics: "Making of exclusivo",
@@ -80,7 +80,7 @@ export default function SampaVerticalLanding() {
     {
       id: 3,
       thumbnail: "/horizontais/CAPA_03.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      videoUrl: "/videos/horizontais/VIDEO_03.mp4",
       title: "Pesca Trade Show",
       description: "Cobertura audiovisual completa da maior feira de pesca do Brasil.",
       metrics: "1.8M visualizações",
@@ -88,7 +88,7 @@ export default function SampaVerticalLanding() {
     {
       id: 4,
       thumbnail: "/horizontais/CAPA_04.jpg",
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      videoUrl: "/videos/horizontais/VIDEO_04.mp4",
       title: "Detons - Trace Brasil",
       description: "Evento Trace Brasil, que é um canal de TV voltado à cultura Afro Urbana.",
       metrics: "500K visualizações",
@@ -293,7 +293,7 @@ export default function SampaVerticalLanding() {
             Comunicar, atrair e converter.<br />
           </h1>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-6 md:mb-8 px-4">
-            Este é o nosso propósito
+            Este é o nosso propósito para sua marca ou evento
           </p>
           {/* <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
             <Button
@@ -401,7 +401,7 @@ export default function SampaVerticalLanding() {
       <section className="py-12 md:py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Criativos Verticais</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Conteúdos Verticais</h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">
               Criação inteligente, no formato que vende.
             </p>
@@ -606,9 +606,9 @@ export default function SampaVerticalLanding() {
             </div>
 
             <button
-              className="flex items-center gap-3 bg-[#d32d5427] hover:bg-[#d32d543d]  text-[#D32D54] px-6 py-4 rounded-2xl text-lg md:text-2xl font-semibold shadow-lg transition-all duration-300"
+              className="flex items-center gap-3 bg-[#d32d5427] hover:bg-[#d32d543d]  text-[#D32D54] px-6 py-4 hover:scale-105 hover:shadow-2xl hover:animate-pulse rounded-2xl text-lg md:text-2xl font-semibold shadow-lg transition-all duration-300"
             >
-              <Phone className="w-6 h-6 md:w-7 md:h-7 text-[#D32D54]" />
+              <Phone className="w-6 h-6 md:w-7 md:h-7 text-[#D32D54] transition-all duration-300" />
               Entre agora em contato
             </button>
             </div>
