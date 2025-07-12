@@ -1,5 +1,6 @@
 "use client"
 
+import { FaBehance } from "react-icons/fa"; 
 import { useState, useRef, useEffect } from "react"
 import { Play, Pause, Mail, Instagram, Twitter, ChevronDown, Award, Users, Zap, Eye, ArrowRight, Linkedin, Radio, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -205,7 +206,7 @@ export default function SampaVerticalLanding() {
       <header className="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src="/sampa-logo.png" alt="Sampa Mov" className="h-12 w-auto" />
+            <img src="/sampa-logo.png" alt="Sampa Mov" className="h-20 w-auto" />
           </div>
 
           <nav className="hidden md:flex space-x-8">
@@ -236,7 +237,7 @@ export default function SampaVerticalLanding() {
             </a>
           </nav>
 
-          <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {/* <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1">
               <div
                 className={`w-full h-0.5 bg-white transition-transform ${mobileMenuOpen ? "rotate-45 translate-y-1.5" : ""}`}
@@ -246,7 +247,7 @@ export default function SampaVerticalLanding() {
                 className={`w-full h-0.5 bg-white transition-transform ${mobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
               ></div>
             </div>
-          </button>
+          </button> */}
         </div>
       </header>
 
@@ -290,13 +291,11 @@ export default function SampaVerticalLanding() {
         <div className="container mx-auto text-center animate-on-scroll">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 hero-gradient leading-tight">
             Comunicar, atrair e converter.<br />
-            <span className="text-[#D32D54]">Este é o nosso propósito.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-6 md:mb-8 px-4">
-            Criamos experiências visuais impactantes que conectam marcas ao seu público através de storytelling
-            autêntico e produção de alta qualidade
+            Este é o nosso propósito
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
             <Button
               size="lg"
               className="bg-[#D32D54] hover:bg-[#B02346] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto"
@@ -310,7 +309,7 @@ export default function SampaVerticalLanding() {
             >
               Falar Conosco
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -387,10 +386,10 @@ export default function SampaVerticalLanding() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-white">{video.title}</h3>
                   <p className="text-gray-400 mb-4">{video.description}</p>
-                  <div className="flex items-center justify-between">
+                  {/* <div className="flex items-center justify-between">
                     <span className="text-[#D32D54] font-semibold">{video.metrics}</span>
                     <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#D32D54] transition-colors" />
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))}
@@ -452,9 +451,9 @@ export default function SampaVerticalLanding() {
                   </button>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2 md:p-4 z-30">
+                {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2 md:p-4 z-30">
                   <h3 className="text-white font-semibold text-xs md:text-sm">{video.title}</h3>
-                </div>
+                </div> */}
 
                 <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#D32D54] rounded-lg transition-colors duration-300 z-20"></div>
               </div>
@@ -464,7 +463,7 @@ export default function SampaVerticalLanding() {
       </section>
 
       {/* Services Section */}
-      <section id="servicos" className="py-12 md:py-20 px-4">
+      <section id="servicos" className="py-44 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12 md:mb-16 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Nossos Serviços</h2>
@@ -546,80 +545,80 @@ export default function SampaVerticalLanding() {
       </section> */}
 
 
-        <div className="w-full mx-auto flex items-center justify-between animate-on-scroll relative">
-          <img 
+        <div className="w-full gap-36 md:gap-0 flex-col lg:flex-row-reverse mt-20 lg:mt-56 mx-auto flex items-center justify-between animate-on-scroll relative">
+          <div className="animate-on-scroll flex items-start flex-col lg:mr-[30%] lg:mb-[250px] justify-center">
+            <div className="flex flex-col gap-20">
+            <div className="space-y-10 flex flex-col items-start">
+              <div className="space-y-2">
+                <h4 className="text-lg font-semibold text-[#D32D54]">Contato</h4>
+                <a
+                  href="mailto:producao@sampamov.com"
+                  className="flex items-center justify-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+                >
+                  <Mail className="w-4 h-4 text-[#D32D54]" />
+                  <span>producao@sampamov.com</span>
+                </a>
+              </div>
+
+              <div className="space-y-2">
+                <h4 className="text-lg font-semibold text-[#D32D54]">Siga-nos</h4>
+                <a
+                  href="https://instagram.com/sampa.mov"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+                >
+                  <Instagram className="w-4 h-4 text-[#D32D54]" />
+                  <span>Instagram</span>
+                </a>
+                <a
+                  href="https://linkedin.com/company/sampa-mov-produtora-audiovisual/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+                >
+                  <Linkedin className="w-4 h-4 text-[#D32D54]" />
+                  <span>Linkedin</span>
+                </a>
+                <a
+                  href="https://behance.net/sampamovprodutora"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+                >
+                  <FaBehance className="w-5 h-5 text-[#D32D54]" />
+                  <span>Behance</span>
+                </a>
+              </div>
+
+              <div className="space-y-2">
+                <h4 className="text-lg font-semibold text-[#D32D54]">Whatsapp</h4>
+                <a
+                  href="https://wa.me/5511914293961"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-[#D32D54]" />
+                  <span>(11) 91429-3961</span>
+                </a>
+              </div>
+            </div>
+
+            <button
+              className="flex items-center gap-3 bg-[#d32d5427] hover:bg-[#d32d543d]  text-[#D32D54] px-6 py-4 rounded-2xl text-lg md:text-2xl font-semibold shadow-lg transition-all duration-300"
+            >
+              <Phone className="w-6 h-6 md:w-7 md:h-7 text-[#D32D54]" />
+              Entre agora em contato
+            </button>
+            </div>
+          </div>
+           <img 
             src="/logos/lead.png" 
             alt="Logo" 
-            className="h-auto w-[40%] md:w-[370px] lg:w-[600px]"
+            className="h-auto w-[100%] md:w-[500px] lg:w-[900px]"
           />
-          {/* <div className="mr-44">
-          <Button
-            size="lg"
-            className="bg-[#d32d5429] text-[#D32D54] hover:text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold"
-          >
-            Vamos Conversar
-          </Button>
-          </div> */}
         </div>
-      
-
-      {/* Footer */}
-      <footer id="contato" className="bg-[#d32d5412] border-[#D32D54]">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 items-center md:grid-cols-3 gap-8 mb-8 text-center">
-            <div className="animate-on-scroll">
-              <img src="/sampa-logo.png" alt="Sampa Mov" className="h-8 w-auto mb-4 mx-auto" />
-              {/* <p className="text-gray-400">Criando conteúdo inovador e envolvente para o mundo digital.</p> */}
-            </div>
-
-            <div className="animate-on-scroll">
-              <h3 className="text-lg font-semibold mb-4 text-[#D32D54]">Contato</h3>
-              <div className="space-y-2">
-                <div className="flex items-center justify-center space-x-2">
-                  <Mail className="w-4 h-4 text-[#D32D54]" />
-                  <span className="text-gray-400">producao@sampamov.com</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <Phone className="w-4 h-4 text-[#D32D54]" />
-                  <span className="text-gray-400">(11) 91429-3961</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="animate-on-scroll">
-              <h3 className="text-lg font-semibold mb-4 text-[#D32D54]">Redes Sociais</h3>
-              <div className="flex justify-center space-x-4">
-                <a
-                  href="https://www.linkedin.com/company/sampa-mov-produtora-audiovisual/"
-                  className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="http://instagram.com/sampa.mov"
-                  className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-
-                <a
-                  href="https://www.behance.net/sampamovprodutora/appreciated"
-                  className="w-10 h-10 bg-gray-800/50 rounded-lg flex items-center justify-center hover:bg-[#D32D54] transition-colors duration-300"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/logos/Behance-Logo.png" alt="Behance Logo" className="w-20" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-[#d32d5421] pt-8 text-center">
-            <p className="text-gray-400">© 2025 Sampa Mov. Todos os direitos reservados.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
