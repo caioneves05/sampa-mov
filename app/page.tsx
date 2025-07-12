@@ -314,28 +314,28 @@ export default function SampaVerticalLanding() {
       </section>
 
       {/* Stats Section */}
-      {/* <section className="py-12 md:py-16 px-4 border-y border-gray-800">
+      <section className="py-12 md:py-16 px-4 border-y border-gray-800">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
             <div className="animate-on-scroll">
-              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">50+</div>
+              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">300+</div>
               <div className="text-sm md:text-base text-gray-400">Projetos Entregues</div>
             </div>
             <div className="animate-on-scroll">
-              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">15M+</div>
+              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">5M+</div>
               <div className="text-sm md:text-base text-gray-400">Visualizações</div>
             </div>
             <div className="animate-on-scroll">
-              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">25+</div>
+              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">50+</div>
               <div className="text-sm md:text-base text-gray-400">Marcas Atendidas</div>
             </div>
             <div className="animate-on-scroll">
-              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">3</div>
+              <div className="text-2xl md:text-4xl font-bold text-[#D32D54] mb-1 md:mb-2">5</div>
               <div className="text-sm md:text-base text-gray-400">Anos de Experiência</div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
     
 
@@ -545,9 +545,9 @@ export default function SampaVerticalLanding() {
       </section> */}
 
 
-        <div className="w-full gap-36 md:gap-0 flex-col lg:flex-row-reverse mt-20 lg:mt-56 mx-auto flex items-center justify-between animate-on-scroll relative">
-          <div className="animate-on-scroll flex items-start flex-col lg:mr-[30%] lg:mb-[250px] justify-center">
-            <div className="flex flex-col gap-20">
+        <div id="contato" className="w-full gap-36 md:gap-0 flex-col lg:flex-row-reverse mt-20 lg:mt-56 mx-auto flex items-center justify-between animate-on-scroll relative">
+          <div className="animate-on-scroll flex items-start flex-col lg:mr-[100px] justify-center">
+            <div className="flex flex-col gap-12">
             <div className="space-y-10 flex flex-col items-start">
               <div className="space-y-2">
                 <h4 className="text-lg font-semibold text-[#D32D54]">Contato</h4>
@@ -606,7 +606,7 @@ export default function SampaVerticalLanding() {
             </div>
 
             <button
-              className="flex items-center gap-3 bg-[#d32d5427] hover:bg-[#d32d543d]  text-[#D32D54] px-6 py-4 hover:scale-105 hover:shadow-2xl hover:animate-pulse rounded-2xl text-lg md:text-2xl font-semibold shadow-lg transition-all duration-300"
+              className="flex items-center gap-3 bg-[#d32d5427] hover:bg-[#d32d543d]  text-[#D32D54] px-6 py-4 hover:scale-105 hover:shadow-2xl hover:animate-pulse rounded-xl text-lg md:text-2xl font-semibold shadow-lg transition-all duration-300"
             >
               <Phone className="w-6 h-6 md:w-7 md:h-7 text-[#D32D54] transition-all duration-300" />
               Entre agora em contato
@@ -616,7 +616,7 @@ export default function SampaVerticalLanding() {
            <img 
             src="/logos/lead.png" 
             alt="Logo" 
-            className="h-auto w-[100%] md:w-[500px] lg:w-[900px]"
+            className="h-auto w-[100%] md:w-[500px] lg:w-[700px]"
           />
         </div>
     </div>
