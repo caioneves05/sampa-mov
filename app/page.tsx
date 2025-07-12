@@ -545,8 +545,8 @@ export default function SampaVerticalLanding() {
         </div>
       </section> */}
 
-<div id="contato" className="w-full flex flex-col lg:flex-row-reverse items-center justify-between mt-20 lg:mt-56 animate-on-scroll relative">
-  <div className="animate-on-scroll flex items-start flex-col w-full max-w-xl lg:mr-24 mt-12 lg:mt-0">
+<div id="contato" className="w-full flex flex-col lg:flex-row-reverse items-center justify-between md:mt-20 lg:mt-56 animate-on-scroll relative">
+  <div className="animate-on-scroll flex items-center lg:items-start flex-col w-full max-w-xl mt-12 lg:mt-0">
     <div className="flex flex-col gap-12">
       <div className="space-y-10 flex flex-col items-start">
         <div className="space-y-2">
@@ -615,7 +615,7 @@ export default function SampaVerticalLanding() {
   </div>
 </div>
 
-      <div id="contato" className="w-full gap-36 md:gap-0 flex-col lg:flex-row-reverse mx-auto flex items-center justify-between animate-on-scroll relative">
+      <div id="contato" className="w-full gap-36 md:gap-0 flex-col mt-36 lg:flex-row-reverse mx-auto flex items-center justify-between animate-on-scroll relative">
       <img 
         src="/logos/lead.png" 
         alt="Logo" 
