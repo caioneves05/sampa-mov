@@ -66,7 +66,8 @@ export default function SampaVerticalLanding() {
       thumbnail: "/horizontais/CAPA_01.jpg",
       videoUrl: "/videos/horizontais/VIDEO_01.mp4",
       title: "Desafio X2 Podpah",
-      description: "Aftermovie dos melhores momentos do evento de futebol do maior podcast do Brasil.",
+      description: `Aftermovie dos melhores momentos do evento
+      de futebol do maior podcast do Brasil.`,
       metrics: "2.5M visualizações",
     },
     {
@@ -544,81 +545,84 @@ export default function SampaVerticalLanding() {
         </div>
       </section> */}
 
-
-        <div id="contato" className="w-full gap-36 md:gap-0 flex-col lg:flex-row-reverse mt-20 lg:mt-56 mx-auto flex items-center justify-between animate-on-scroll relative">
-          <div className="animate-on-scroll flex items-start flex-col lg:mr-[100px] justify-center">
-            <div className="flex flex-col gap-12">
-            <div className="space-y-10 flex flex-col items-start">
-              <div className="space-y-2">
-                <h4 className="text-lg font-semibold text-[#D32D54]">Contato</h4>
-                <a
-                  href="mailto:producao@sampamov.com"
-                  className="flex items-center justify-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
-                >
-                  <Mail className="w-4 h-4 text-[#D32D54]" />
-                  <span>producao@sampamov.com</span>
-                </a>
-              </div>
-
-              <div className="space-y-2">
-                <h4 className="text-lg font-semibold text-[#D32D54]">Siga-nos</h4>
-                <a
-                  href="https://instagram.com/sampa.mov"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
-                >
-                  <Instagram className="w-4 h-4 text-[#D32D54]" />
-                  <span>Instagram</span>
-                </a>
-                <a
-                  href="https://linkedin.com/company/sampa-mov-produtora-audiovisual/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
-                >
-                  <Linkedin className="w-4 h-4 text-[#D32D54]" />
-                  <span>Linkedin</span>
-                </a>
-                <a
-                  href="https://behance.net/sampamovprodutora"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
-                >
-                  <FaBehance className="w-5 h-5 text-[#D32D54]" />
-                  <span>Behance</span>
-                </a>
-              </div>
-
-              <div className="space-y-2">
-                <h4 className="text-lg font-semibold text-[#D32D54]">Whatsapp</h4>
-                <a
-                  href="https://wa.me/5511914293961"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
-                >
-                  <Phone className="w-4 h-4 text-[#D32D54]" />
-                  <span>(11) 91429-3961</span>
-                </a>
-              </div>
-            </div>
-
-            <button
-              className="flex items-center gap-3 bg-[#d32d5427] hover:bg-[#d32d543d]  text-[#D32D54] px-6 py-4 hover:scale-105 hover:shadow-2xl hover:animate-pulse rounded-xl text-lg md:text-2xl font-semibold shadow-lg transition-all duration-300"
-            >
-              <Phone className="w-6 h-6 md:w-7 md:h-7 text-[#D32D54] transition-all duration-300" />
-              Entre agora em contato
-            </button>
-            </div>
-          </div>
-           <img 
-            src="/logos/lead.png" 
-            alt="Logo" 
-            className="h-auto w-[100%] md:w-[500px] lg:w-[700px]"
-          />
+<div id="contato" className="w-full flex flex-col lg:flex-row-reverse items-center justify-between mt-20 lg:mt-56 animate-on-scroll relative">
+  <div className="animate-on-scroll flex items-start flex-col w-full max-w-xl lg:mr-24 mt-12 lg:mt-0">
+    <div className="flex flex-col gap-12">
+      <div className="space-y-10 flex flex-col items-start">
+        <div className="space-y-2">
+          <h4 className="text-lg font-semibold text-[#D32D54]">Contato</h4>
+          <a
+            href="mailto:producao@sampamov.com"
+            className="flex items-center justify-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+          >
+            <Mail className="w-4 h-4 text-[#D32D54]" />
+            <span>producao@sampamov.com</span>
+          </a>
         </div>
+
+        <div className="space-y-2">
+          <h4 className="text-lg font-semibold text-[#D32D54]">Siga-nos</h4>
+          <a
+            href="https://instagram.com/sampa.mov"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+          >
+            <Instagram className="w-4 h-4 text-[#D32D54]" />
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://linkedin.com/company/sampa-mov-produtora-audiovisual/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+          >
+            <Linkedin className="w-4 h-4 text-[#D32D54]" />
+            <span>Linkedin</span>
+          </a>
+          <a
+            href="https://behance.net/sampamovprodutora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row items-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+          >
+            <FaBehance className="w-5 h-5 text-[#D32D54]" />
+            <span>Behance</span>
+          </a>
+        </div>
+
+        <div className="space-y-2">
+          <h4 className="text-lg font-semibold text-[#D32D54]">Whatsapp</h4>
+          <a
+            href="https://wa.me/5511914293961"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center space-x-2 text-gray-400 hover:text-[#D32D54] transition-colors"
+          >
+            <Phone className="w-4 h-4 text-[#D32D54]" />
+            <span>(11) 91429-3961</span>
+          </a>
+        </div>
+      </div>
+
+      <button
+        className="flex items-center gap-3 bg-[#d32d5427] hover:bg-[#d32d543d] text-[#D32D54] px-6 py-4 hover:scale-105 hover:shadow-2xl hover:animate-pulse rounded-xl text-lg md:text-2xl font-semibold shadow-lg transition-all duration-300"
+      >
+        <Phone className="w-6 h-6 md:w-7 md:h-7 text-[#D32D54] transition-all duration-300" />
+        Entre agora em contato
+      </button>
+    </div>
+  </div>
+</div>
+
+      <div id="contato" className="w-full gap-36 md:gap-0 flex-col lg:flex-row-reverse mx-auto flex items-center justify-between animate-on-scroll relative">
+      <img 
+        src="/logos/lead.png" 
+        alt="Logo" 
+        className="h-auto w-full md:w-[500px] lg:w-[800px] lg:ml-0 lg:mr-auto object-left"
+        style={{ objectPosition: "left" }}
+      />
+    </div>
     </div>
   )
 }
